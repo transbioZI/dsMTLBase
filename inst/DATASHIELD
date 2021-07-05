@@ -8,7 +8,6 @@ AggregateMethods:
     calcMCRDS,
     xtyDS,
     getMyServerDataDS,
-    initRanMatsWithSeedsDS,
 AssignMethods: 
     addInterceptDS,
     initMatricesDS,
