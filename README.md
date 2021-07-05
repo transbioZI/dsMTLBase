@@ -4,7 +4,7 @@ dsMTL (Federated Multi-Task Learning based on DataSHIELD) provided federated, pr
 dsMTL currently includes three supervised and one unsupervised federated multi-task learning algorithms. Specifically, the **dsMTL_L21** approach allows for screening out unimportant features to all tasks. The **dsMTL_trace** approach constrains the models’ representation in a low-dimensional space during the training procedure, in order to penalize the complexity of task-relationships, resulting in an improved generalizability of the models. **dsMTL_net** incorporates the task-relationships that can be described as a graph, in order to incorporate the domain koowledge. The **dsMTL_iNMF** approach is an unsupervised, integrative non-negative matrix factorization method that aims at factorizing the cohorts’ data matrices into homogeneous (i.e. shared across all datasets) and heterogeneous (i.e. specific to any given dataset) components. In addition to the FeMTL methods, we also included in dsMTL a federated implementation of the conventional Lasso (**dsLasso**) due to its wide usage in biomedicine.
 
 <p align="center"> 
-<img src="inst/technique_overview.jpg" style="width: 70%; height: 70%"/>​
+<img src="inst/technique_overview.png" style="width: 70%; height: 70%"/>​
 </p>
 
 
