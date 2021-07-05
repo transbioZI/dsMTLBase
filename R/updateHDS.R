@@ -30,6 +30,7 @@
 
 
 ################################################################################
+#' @title Collect server-side information for updating H 
 #' @description Estimate the shared component (H) using the local data for method dsMTL_iNMF 
 #' @param X The name of the data matrix   
 #' @param H The current estimate of shared component H   

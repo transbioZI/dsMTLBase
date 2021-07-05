@@ -27,6 +27,7 @@
 
 
 ################################################################################
+#' @title Receive Set data matrix on server
 #' @description Receive the data matrix from the valid client
 #' @param remoteKey A key(string) created by the server administrator   
 #' @param data  The name of the target matrix on the server

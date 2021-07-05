@@ -28,6 +28,7 @@
 
 
 ################################################################################
+#' @title Access the gradient and function value of logistic loss
 #' @description Calculate the gradient and  function value of logistic loss of a given point
 #' @param w  The current estimate of coefficient vector
 #' @param x  The design matrix    

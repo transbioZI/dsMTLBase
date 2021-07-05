@@ -30,12 +30,13 @@
 
 
 ################################################################################
+#' @title matrix multiplication 
 #' @description matrix multiplication x * t(y) 
 #' @param x One matrix for multiplication   
 #' @param y The other matrix for multiplication    
 
 #' @return The result matrix
-#' @details This was used to estimate the maximum \lambda
+#' @details This was used to estimate the maximum  \eqn{\lambda}
 
 #' @export  
 #' @author Han Cao

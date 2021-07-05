@@ -30,6 +30,7 @@
 
 
 ################################################################################
+#' @title Subset subjects given index
 #' @description Subset subjects for cross-validation
 #' @param symbol The name of the design matrix   
 #' @param idx  The index of the selected subjects

@@ -30,6 +30,7 @@
 
 
 ################################################################################
+#' @title Update all heterogeneous variables 
 #' @description Update the heterogeneous variables for method dsMTL_iNMF 
 #' @param X The name of the data matrix   
 #' @param newH The aggregated estimate of shared component H   

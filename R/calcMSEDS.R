@@ -27,7 +27,8 @@
 
 
 ################################################################################
-#' @description Calculating mean-squared errors (MSE)
+#' @title Calculate mean-squared errors (MSE)
+#' @description Calculate mean-squared errors (MSE)
 #' @param ws The list of coefficient vectors for all servers   
 #' @param x  The design matrix on a target server
 #' @param y, The response vector on a target server

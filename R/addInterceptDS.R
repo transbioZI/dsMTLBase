@@ -27,13 +27,14 @@
 
 
 ################################################################################
+#' @title Set intercept model   
 #' @description The option to turn on or off intercept model.   
 #' @param x.mat The name of design matrix  
 #' @param intercept The indicator to turn on (=TRUE) or off (=FALSE) the intercept model
 
 #' @return The designed matrix
 #' @details If intercept==TRUE, the "1" column was attached on the left side of x.mat, the combination was returned. If intercept==FALSE,
-#' x.mat was returned. In the linear regression, y=x\beta+b, the non-intercept model referred to b==0. In this case, the design matrix 
+#' x.mat was returned. In the linear regression,  \eqn{y=x \beta+b}, the non-intercept model referred to b==0. In this case, the design matrix 
 #' and response should be z-standardized. The default was non-intercept model
 
 #' @export  

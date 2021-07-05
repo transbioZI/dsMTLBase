@@ -27,6 +27,7 @@
 
 
 ################################################################################
+#' @title Initialize variables with given random seeds
 #' @description The initialization of server-side variables for method dsMTL_iNMF
 #' @param rank  The rank of data matrix in factorization
 #' @param X     The name of the data matrix for factorization    

@@ -27,7 +27,8 @@
 
 
 ################################################################################
-#' @description Calculating missing classification rate (MCR)
+#' @title Calculate missing classification rate (MCR)
+#' @description Calculate missing classification rate (MCR)
 #' @param ws The list of coefficient vectors for all servers   
 #' @param x  The design matrix on a target server
 #' @param y, The response vector on a target server
