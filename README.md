@@ -49,7 +49,7 @@ The entire tutorial can be found: https://isglobal-brge.github.io/resource_bookd
 After login, go to Administration -> DataSHIELD -> Add Package. In the dialog, select the installation from github, then filled with repository information, i.e. organization name: transbioZI; package name: dsMTLBase; git branch: main 
 
 <p align="center"> 
-<img src="inst/Install.png" style="width: 70%; height: 70%"/>​
+<img src="inst/Install.PNG" style="width: 70%; height: 70%"/>​
 </p>
 
 
