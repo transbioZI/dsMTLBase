@@ -34,12 +34,5 @@ dsadmin.set_method(opal = opals, name = "setMyServerDataDS", func=NULL, path = "
 dsadmin.set_method(opal = opals, name = "subsetSubjestsDS", func=NULL, path = "./dsMTLBase/subsetSubjestsDS.R", type = "assign") 
 
 
-#dsadmin.set_method(opal = opals, name = "predictLassoDS", func=NULL, path = "./dsMTLBase/predictLassoDS.R", type = "assign") 
-
-
-
-
-
-
 
 opal.logout(opals)
