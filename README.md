@@ -40,7 +40,7 @@ There are two ways to install dsMTLBase on a well-configured DataSHIELD server. 
 
 #### Using DataSHIELD backend administration page 
  
-The entire tutorial can be found [here](https://isglobal-brge.github.io/resource_bookdown/tips-and-tricks.html#how-to-install-datashield-packages-into-opal-server). After the login of the administration page, go to "Administration -> DataSHIELD -> Add Package". In the dialog (as shown below), selected the "installation from github", and then filled with the repository information ( organization name: transbioZI; package name: dsMTLBase; git branch: main ).
+The entire tutorial can be found [here](https://isglobal-brge.github.io/resource_bookdown/tips-and-tricks.html#how-to-install-datashield-packages-into-opal-server). After the login of the administration page, go to "Administration -> DataSHIELD -> Add Package". In the dialog (as shown below), filled with the repository information of dsMTLBase on github ( organization name: transbioZI; package name: dsMTLBase; git branch: main ).
 <p align="center"> 
 <img src="inst/Install.PNG" style="width: 70%; height: 70%"/>​
 </p>
