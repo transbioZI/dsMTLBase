@@ -6,21 +6,22 @@ dsMTL (Federated Multi-Task Learning based on DataSHIELD) provided federated, pr
 </p>
 
 
-dsMTL currently includes three supervised and one unsupervised federated multi-task learning as well as one federated machine learning algorithms. Each algorithm contained a specific assumption of cross-cohort heterogeneity, which could be linked to different application scenario in molecular studies.
-| Name  | Type | Aim | Effect |
-| --- | --- |
-| dsMTL_L21  | MTL | Classification/Regression | Screen out unimportant features to all tasks |
-| dsMTL_trace  | MTL | Classification/Regression | Identify models represented in low-dimentional spcae |
-| dsMTL_net  | MTL | Classification/Regression | Incorporate task-relatedness described as a graph |
-| dsMTL_iNMF  | MTL | Matrix factorization | Factorize matrices into shared and specific components |
-| dsLasso  | ML | Classification/Regression | Train a Lasso model on the conbained cohorts |
+dsMTL currently includes three supervised and one unsupervised federated multi-task learning as well as one federated machine learning algorithms. Each algorithm captured a specific form of cross-cohort heterogeneity, which was linked to different applications in molecular studies.
 
-
-
+| Name  | Type | Task | Effect |
+| --- | --- | --- | --- |
+| `dsLasso`  | ML | Classification/Regression | Train a Lasso model on the conbained cohorts |
+| `dsMTL_L21`  | MTL | Classification/Regression | Screen out unimportant features to all tasks |
+| `dsMTL_trace`  | MTL | Classification/Regression | Identify models represented in low-dimentional spcae |
+| `dsMTL_net`  | MTL | Classification/Regression | Incorporate task-relatedness described as a graph |
+| `dsMTL_iNMF`  | MTL | Matrix factorization | Factorize matrices into shared and specific components |
 
 # Installation
+
+To enable dsMTLBase functions, the DataSHIELD server has to be installed first. dsMTLBase can be installed smoothly on DataSHIELD server in several ways.
+
 ## Requirements
-dsMTLBase was successfully tested with these server-side softwares
+dsMTLBase was tested on the dependent softwares with minimum versions
 ```
 Opal 3.0.3
 dsBase 6.1.0
@@ -28,38 +29,38 @@ resourcer 1.0.1
 R >= 3.5.0
 ```
 
-## Install dsMTLBase on the DataSHIELD (or opal) server
+## Install an DataSHIELD server 
 
-### Install an opal server 
+The complete document for describing the installation of DataSHIELD server from scratch was [here](https://opaldoc.obiba.org/en/latest/admin/installation.html). Alternatively, to test dsMTL functions, one could dowload a [well-configured DataSHIELD server](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/931069953/Installation+Training+Hub+-+DataSHIELD+v6.1) and install locally using Virtualbox. This resource was provided by DataSHIELD  team including several tutorials about the installation, configuration and usage of DataSHIELD. A quick test of dsMTLBase installation is possible based on [opal test server](https://opal-test.obiba.org). This is the open server for testing new DataSHIELD functions, thus it is not so stable. (username: administrator, password: password)
 
-* Install a well-configured server using Virtualbox. This [training course](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/931069953/Installation+Training+Hub+-+DataSHIELD+v6.1) was provided by DataSHIELD  team
-* Install and configure opal server from scratch. This is from the [doccument](https://opaldoc.obiba.org/en/latest/admin/installation.html) of opal server
-* Quick test using the [opal test server](https://opal-test.obiba.org). Please note this server was upgraded frequently so it might not work (see the suooprted opal server above)
-    1. username: administrator
-    1. password: password
 
-### Install package dsMTLBase
+## Install dsMTLBase
 
-* Install using DataSHIELD web-GUI on Client computer
-    1. The entire tutorial can be found [here](https://isglobal-brge.github.io/resource_bookdown/tips-and-tricks.html#how-to-install-datashield-packages-into-opal-server)
-    1. After login of web-GUI, go to "Administration -> DataSHIELD -> Add Package". In the dialog, selected the installation from github, and then filled with the repository information, i.e. organization name: transbioZI; package name: dsMTLBase; git branch: main 
+There are two ways to install dsMTLBase on a well-configured DataSHIELD server. With an administrator account, one could login the backend administration page from the web-browser, and let DataSHIELD server yield dsMTLBase codes from github webset directly. Alternatively, one could use the script (./inst/uploadFunctions.R) to upload the dsMTLBase codes from the local computer. To use the script successfully, please fill your username, password and server IP in the top lines of the script.  
+
+#### Using DataSHIELD backend administration page 
+ 
+The entire tutorial can be found [here](https://isglobal-brge.github.io/resource_bookdown/tips-and-tricks.html#how-to-install-datashield-packages-into-opal-server). After the login of the administration page, go to "Administration -> DataSHIELD -> Add Package". In the dialog (as shown below), selected the "installation from github", and then filled with the repository information ( organization name: transbioZI; package name: dsMTLBase; git branch: main ).
 <p align="center"> 
 <img src="inst/Install.PNG" style="width: 70%; height: 70%"/>​
 </p>
 
-* Install using command line on Client computer
-    1. Be sure your DataSHIELD server account has administration permision
-    2. Install R opal management package opalr
-        ```shell
-        install.packages("opalr")
-        ```
-    4. Perform these on shell command line
-    ```shell
-    git clone https://github.com/transbioZI/dsMTLBase.git
-    cd dsMTLBase
-    # open ./inst/uploadFunctions.R, change the server information to yours (server IP, user name and passowrd)
-    Rscript ./inst/uploadFunctions.R
-    ```
+#### Using R scripts
+
+1, Install DataSHIELD server management package opalr in R
+```r
+  install.packages("opalr")
+```
+2, Download dsMTLBase sources from github in shell
+```shell
+  git clone https://github.com/transbioZI/dsMTLBase.git
+  cd dsMTLBase
+  gedit ./inst/uploadFuntions.R
+```
+3, Change the server information to yours (server IP, user name and passowrd) and run
+```shell
+  Rscript ./inst/uploadFunctions.R
+```
 
 
 
