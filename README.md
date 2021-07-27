@@ -16,6 +16,11 @@ dsMTL currently includes three supervised and one unsupervised federated multi-t
 | `dsMTL_net`  | MTL | Classification/Regression | Incorporate task-relatedness described as a graph |
 | `dsMTL_iNMF`  | MTL | Matrix factorization | Factorize matrices into shared and specific components |
 
+# Client-side Package of dsMTL
+
+The Client-side package can be found：[dsMTLClient](https://github.com/transbioZI/dsMTLClient)
+
+
 # Installation
 
 To enable dsMTLBase functions, the DataSHIELD server has to be installed first. dsMTLBase can be installed smoothly on DataSHIELD server in several ways.
@@ -62,6 +67,9 @@ The entire tutorial can be found [here](https://isglobal-brge.github.io/resource
   Rscript ./inst/uploadFunctions.R
 ```
 
+# Data upload, import and management
+
+The tutorial has been provided by the DataSHIELD team. Check ["Management data in Opal"](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943477/Opal+management#Opalmanagement-DataSHIELDAdministration)
 
 
 # Contact
