@@ -31,7 +31,7 @@ R >= 3.5.0
 
 ## Install an DataSHIELD server 
 
-The complete document for describing the installation of DataSHIELD server from scratch was [here](https://opaldoc.obiba.org/en/latest/admin/installation.html). Alternatively, to test dsMTL functions, one could dowload a [well-configured DataSHIELD server](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/931069953/Installation+Training+Hub+-+DataSHIELD+v6.1) and install locally using Virtualbox. This resource was provided by DataSHIELD  team including several tutorials about the installation, configuration and usage of DataSHIELD. A quick test of dsMTLBase installation is possible based on [opal test server](https://opal-test.obiba.org). This is the open server for testing new DataSHIELD functions, thus it is not so stable. (username: administrator, password: password)
+The complete document for describing the installation of DataSHIELD server from scratch was [here](https://opaldoc.obiba.org/en/latest/admin/installation.html). Alternatively, to test dsMTL functions, one could dowload a [well-configured DataSHIELD server](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/931069953/Installation+Training+Hub+-+DataSHIELD+v6.1) and install locally using Virtualbox. This resource was provided by DataSHIELD  team including several tutorials about the ** installation, configuration and data management ** of DataSHIELD. A quick test of dsMTLBase installation is possible based on [opal test server](https://opal-test.obiba.org). This is the open server for testing new DataSHIELD functions, thus it is not so stable. (username: administrator, password: password)
 
 
 ## Install dsMTLBase
