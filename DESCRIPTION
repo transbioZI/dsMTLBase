@@ -24,21 +24,6 @@ Authors@R:
              email="emanuel.schwarz@zi-mannheim.de"))
 Maintainer: Han Cao <hank9cao@gmail.com>
 Description: dsMTL - Federated Multi-Task Learning based on DataSHIELD dsBase
-AggregateMethods: LS_iter_updateDS,
-    LR_iter_updateDS,
-    LS_funcVal_evalDS,
-    LR_funcVal_evalDS,
-    updateHDS,
-    calcMSEDS,
-    calcMCRDS,
-    xtyDS,
-    getMyServerDataDS,
-AssignMethods: addInterceptDS,
-    initMatricesDS,
-    initRanMatsWithSeedsDS,
-    updateOtherMatsDS,
-    setMyServerDataDS,
-    subsetSubjestsDS
 Depends: R (>= 3.5)
 Encoding: UTF-8
 LazyData: true
