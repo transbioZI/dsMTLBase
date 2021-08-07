@@ -1,8 +1,8 @@
 library("opalr")
 
 options(opal.opts=list(ssl.verifypeer=0, ssl.verifyhost=0))
-opals=c(opal.login(url = "http://192.168.56.100:8080/", user = "administrator", password = "datashield_test&"),
-        opal.login(url = "http://192.168.56.101:8080/", user = "administrator", password = "datashield_test&"))
+opals=c(opal.login(url = "http://xxx.xxx.xxx.xxx:8080/", user = "xxx", password = "xxx"),
+        opal.login(url = "http://xxx.xxx.xxx.xxx:8080/", user = "xxx", password = "xxx"))
 ####
 #note: set func=null. 
 ####
