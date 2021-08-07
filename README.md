@@ -16,9 +16,14 @@ dsMTL currently includes three supervised and one unsupervised federated multi-t
 | `dsMTL_net`  | MTL | Classification/Regression | Incorporate task-relatedness described as a graph |
 | `dsMTL_iNMF`  | MTL | Matrix factorization | Factorize matrices into shared and specific components |
 
+
+
+
 # Client-side Package of dsMTL
 
 The Client-side package can be found：[dsMTLClient](https://github.com/transbioZI/dsMTLClient)
+
+
 
 
 # Installation
@@ -67,11 +72,30 @@ The entire tutorial can be found [here](https://isglobal-brge.github.io/resource
   Rscript ./inst/uploadFunctions.R
 ```
 
+
+
+
 # Data upload, import and management
 
 For small-scale and uncompressed datasets, it is recommended to upload and import directly into DataSHIELD. Check ["Management data in Opal"](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943477/Opal+management#Opalmanagement-DataSHIELDAdministration) for detail tutorial. For large-scale and compressed datasets, i.e. *.rda files in R,  it is recommended to attach the data sources using the R package [resources](https://opaldoc.obiba.org/en/latest/resources.html). The tutorial can be found [here](https://rpubs.com/jrgonzalezISGlobal/tutorial_resources)
 
 
 
+
 # Contact
 Han Cao (hank9cao@gmail.com)
+
+
+
+# Useful links
+1. dsMTLClient - federated, privacy-preserving machine-learning and multi-task learning analysis: https://github.com/transbioZI/dsMTLClient
+2. Documents of opal servers: https://opaldoc.obiba.org/en/latest/index.html
+3. Tutorial of DataSHIELD for beginers: https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943395/Beginners+Hub
+4. Forum of DataSHIELD: https://datashield.discourse.group/
+5. opalr - an R package for managing DataSHIELD server from script: https://cran.r-project.org/web/packages/opalr/index.html
+6. resources - an R package for importing data of different sources: https://opaldoc.obiba.org/en/latest/resources.html
+7. Tutorial of resources: https://rpubs.com/jrgonzalezISGlobal/tutorial_resources
+8. dsOmics - an R package based on DataSHIELD for omics analysis: https://github.com/isglobal-brge/dsOmics
+9. Tutorial of omics analysis using dsOmics: https://rpubs.com/jrgonzalezISGlobal/tutorial_DSomics
+10. Tutorial of omics analysis using dsOmics2： https://htmlpreview.github.io/?https://github.com/isglobal-brge/dsOmicsClient/blob/master/vignettes/dsOmics.html
+11. A book of DataSHIELD book with detailed explainations of esential packages: https://isglobal-brge.github.io/resource_bookdown/  
