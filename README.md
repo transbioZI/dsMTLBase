@@ -23,7 +23,7 @@ The Client-side package can be found：[dsMTLClient](https://github.com/transbio
 
 # Installation
 
-To enable dsMTLBase functions, the DataSHIELD server has to be installed first. dsMTLBase can be installed smoothly on DataSHIELD server in several ways.
+To enable dsMTLBase functions, the DataSHIELD server has to be installed first. dsMTLBase can be installed smoothly based on DataSHIELD server in several ways.
 
 ## Requirements
 dsMTLBase was tested on the dependent softwares with minimum versions
@@ -36,12 +36,12 @@ R >= 3.5.0
 
 ## Install an DataSHIELD server 
 
-The complete document for describing the installation of DataSHIELD server from scratch was [here](https://opaldoc.obiba.org/en/latest/admin/installation.html). Alternatively, to test dsMTL functions, one could dowload a [well-configured DataSHIELD server](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/931069953/Installation+Training+Hub+-+DataSHIELD+v6.1) and install locally using Virtualbox. This resource was provided by DataSHIELD  team including several tutorials about the **installation, configuration and data management** of DataSHIELD. A quick test of dsMTLBase installation is possible based on [opal test server](https://opal-demo.obiba.org/ui/index.html#!dashboard). This is the open server for testing new DataSHIELD functions, thus it is not so stable. (username: administrator, password: password)
+The complete document for describing the installation of DataSHIELD server from scratch was [here](https://opaldoc.obiba.org/en/latest/admin/installation.html). Alternatively, to test dsMTL functions, one was recommonded to dowload a [well-configured DataSHIELD server](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/931069953/Installation+Training+Hub+-+DataSHIELD+v6.1) and install locally using Virtualbox. This tutorial was provided by DataSHIELD  team. A quick test of dsMTLBase installation is possible based on [opal demo server](https://opal-demo.obiba.org/ui/index.html#!dashboard). This is an open server for testing DataSHIELD-derived functions, and will be regularly reset everyday. (username: administrator, password: password)
 
 
 ## Install dsMTLBase
 
-There are two ways to install dsMTLBase on a well-configured DataSHIELD server. With an administrator account, one could login the backend administration page from the web-browser, and let DataSHIELD server yield dsMTLBase codes from github webset directly. Alternatively, one could use the script (./inst/uploadFunctions.R) to upload the dsMTLBase codes from the local computer. To use the script successfully, please fill your username, password and server IP in the top lines of the script.  
+There are two ways to install dsMTLBase on a well-configured DataSHIELD server. With an administrator account, one could login the backend administration page from the web-browser, and let DataSHIELD server yield dsMTLBase codes from github directly. Alternatively, one could use the [script](https://github.com/transbioZI/dsMTLBase/blob/main/inst/uploadFuntions.R) to upload the dsMTLBase functions from the local computer. To use the script successfully, please fill your username, password and server IP in the top lines of the script.  
 
 #### Using DataSHIELD backend administration page 
  
@@ -69,7 +69,8 @@ The entire tutorial can be found [here](https://isglobal-brge.github.io/resource
 
 # Data upload, import and management
 
-The tutorial has been provided by the DataSHIELD team. Check ["Management data in Opal"](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943477/Opal+management#Opalmanagement-DataSHIELDAdministration)
+For small-scale and uncompressed datasets, it is recommended to upload and import directly into DataSHIELD. Check ["Management data in Opal"](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943477/Opal+management#Opalmanagement-DataSHIELDAdministration) for detail tutorial. For large-scale and compressed datasets, i.e. *.rda files in R,  it is recommended to attach the data sources using the R package [resources](https://opaldoc.obiba.org/en/latest/resources.html). The tutorial can be found [here](https://rpubs.com/jrgonzalezISGlobal/tutorial_resources)
+
 
 
 # Contact
