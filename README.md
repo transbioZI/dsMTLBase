@@ -77,7 +77,8 @@ The entire tutorial can be found [here](https://isglobal-brge.github.io/resource
 
 # Data upload, import and management
 
-For small-scale and uncompressed datasets, it is recommended to upload and import directly into DataSHIELD. Check ["Management data in Opal"](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943477/Opal+management#Opalmanagement-DataSHIELDAdministration) for detail tutorial. For large-scale and compressed datasets, i.e. *.rda files in R,  it is recommended to attach the data sources using the R package [resources](https://opaldoc.obiba.org/en/latest/resources.html). The tutorial can be found [here](https://rpubs.com/jrgonzalezISGlobal/tutorial_resources)
+1. For small-scale and uncompressed datasets, it is recommended to upload and import directly into DataSHIELD. Check ["Management data in Opal"](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943477/Opal+management#Opalmanagement-DataSHIELDAdministration) for detail tutorial. 
+2. For large-scale and compressed datasets, i.e. *.rda files in R,  it is recommended to attach the data sources using the R package [resources](https://opaldoc.obiba.org/en/latest/resources.html). The tutorial can be found [here](https://rpubs.com/jrgonzalezISGlobal/tutorial_resources)
 
 
 
