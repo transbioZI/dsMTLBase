@@ -25,28 +25,35 @@
 
 
 
-
+#Modification by Augusto Anguita-Ruiz.
+#Version: 05.07.2022
+#Detail: Adding functionality of adjusting for confounders in lasso regression.
 
 
 
 ################################################################################
-#' @title matrix multiplication 
-#' @description matrix multiplication x * t(y) 
+#' @title Estimation of lambda max
+#' @description Lambda max corresponds to the lambda for which all beta are equal to 0, except for covariate betas, which fully vary
 #' @param x One matrix for multiplication   
 #' @param y The other matrix for multiplication    
-
+#' @param covar Positions corresponding to adjusting covariates in the X dataset
+#' @param betaCov estimated beta coefficients from a linear model including only covariates as predictors
 #' @return The result matrix
 #' @details This was used to estimate the maximum  \eqn{\lambda}
 
 #' @export  
-#' @author Han Cao
+#' @author Han Cao & Augusto Anguita-Ruiz
 ################################################################################
 
 
-xtyDS = function(x, y){
+xtycovDS = function(x, y, covar, betaCov){
 
+  betaCov <-  as.numeric(unlist(strsplit(betaCov, split=",")))
+  covar <- as.numeric(unlist(strsplit(covar, split=",")))
   x <- eval(parse(text=x), envir = parent.frame())
   y <- eval(parse(text=y), envir = parent.frame())
-  return(base::t(x) %*% y)
+  
+  return(abs(base::t(x)%*%y - t(x)%*%x[, covar]%*%betaCov))
   
 }
+
