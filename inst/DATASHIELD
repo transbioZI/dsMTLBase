@@ -7,7 +7,8 @@ AggregateMethods:
     calcMSEDS,
     calcMCRDS,
     xtyDS,
-    getMyServerDataDS,
+    xtycovDS,
+    getMyServerDataDS,    
 AssignMethods: 
     addInterceptDS,
     initMatricesDS,
