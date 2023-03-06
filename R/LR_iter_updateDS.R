@@ -44,6 +44,7 @@
 
 
 LR_iter_updateDS <- function( w, x, y){
+
   w <- as.numeric(unlist(strsplit(w, split=",")))
   x <- eval(parse(text=x), envir = parent.frame())
   y <- eval(parse(text=y), envir = parent.frame())
