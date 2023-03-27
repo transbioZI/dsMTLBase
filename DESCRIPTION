@@ -23,7 +23,7 @@ Authors@R:
              role="ths",
              email="emanuel.schwarz@zi-mannheim.de"))
 Maintainer: Han Cao <hank9cao@gmail.com>
-Description: dsMTL - Federated Multi-Task Learning based on DataSHIELD dsBase
+Description: dsMTL - Federated Multi-Task Learning based on DataSHIELD dsBase.
 Depends: R (>= 3.5)
 Encoding: UTF-8
 LazyData: true
