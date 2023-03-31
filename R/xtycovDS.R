@@ -64,7 +64,12 @@ betaCov <-  as.numeric(unlist(strsplit(betaCov, split=",")))
   x <- eval(parse(text=x), envir = parent.frame())
   y <- eval(parse(text=y), envir = parent.frame())
   
-  return(abs(t(x) %*% (y/(exp(x[, covar]%*%betaCov * y) + 1))))
+  if (length(covar)>1){
+  output <- abs(t(x) %*% (y/(exp(x[, covar]%*%betaCov * y) + 1)))
+  	}else{
+  output <- abs(t(x) %*% (y/(exp(x[, covar] * betaCov * y) + 1)))
+  		}
+  return(output)
   
 }else{ 
 
