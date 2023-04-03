@@ -6,11 +6,12 @@ dsMTL (Federated Multi-Task Learning based on DataSHIELD) provided federated, pr
 </p>
 
 
-dsMTL currently includes three supervised and one unsupervised federated multi-task learning as well as one federated machine learning algorithms. Each algorithm captured a specific form of cross-cohort heterogeneity, which was linked to different applications in molecular studies.
+dsMTL currently includes three supervised and one unsupervised federated multi-task learning as well as two federated machine learning algorithms. Each algorithm captured a specific form of cross-cohort heterogeneity, which was linked to different applications in molecular studies.
 
 | Name  | Type | Task | Effect |
 | --- | --- | --- | --- |
 | `dsLasso`  | ML | Classification/Regression | Train a Lasso model on the conbained cohorts |
+| `dsLassoCov`  | ML | Classification/Regression | Federated ML model that can capture the covariate effect |
 | `dsMTL_L21`  | MTL | Classification/Regression | Screen out unimportant features to all tasks |
 | `dsMTL_trace`  | MTL | Classification/Regression | Identify models represented in low-dimentional spcae |
 | `dsMTL_net`  | MTL | Classification/Regression | Incorporate task-relatedness described as a graph |
