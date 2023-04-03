@@ -13,6 +13,8 @@ xtycovDS(x, y, covar, type, betaCov)
 
 \item{covar}{Positions corresponding to adjusting covariates in the X dataset}
 
+\item{type}{regress or classify}
+
 \item{betaCov}{estimated beta coefficients from a linear model including only covariates as predictors}
 }
 \value{
