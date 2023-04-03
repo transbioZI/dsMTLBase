@@ -38,6 +38,7 @@
 #' @param y The other matrix for multiplication    
 #' @param covar Positions corresponding to adjusting covariates in the X dataset
 #' @param betaCov estimated beta coefficients from a linear model including only covariates as predictors
+#' @param type regress or classify
 #' @return The result matrix
 #' @details This was used to estimate the maximum  \eqn{\lambda}
 
