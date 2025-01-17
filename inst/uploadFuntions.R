@@ -33,6 +33,9 @@ dsadmin.set_method(opal = opals, name = "getMyServerDataDS", func=NULL, path = "
 dsadmin.set_method(opal = opals, name = "setMyServerDataDS", func=NULL, path = "./R/setMyServerDataDS.R", type = "assign") 
 dsadmin.set_method(opal = opals, name = "subsetSubjestsDS", func=NULL, path = "./R/subsetSubjestsDS.R", type = "assign") 
 
+#functions for integration of differential privacy
+dsadmin.set_method(opal = opals, name = "LS_simulateDifferencesDS", func=NULL, path = "./R/LS_simulateDifferencesDS.R", type = "aggregate")
+dsadmin.set_method(opal = opals, name = "LR_simulateDifferencesDS", func=NULL, path = "./R/LR_simulateDifferencesDS.R", type = "aggregate")
 
 
 opal.logout(opals)

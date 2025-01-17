@@ -17,6 +17,10 @@ dsMTL currently includes three supervised and one unsupervised federated multi-t
 | `dsMTL_net`  | MTL | Classification/Regression | Incorporate task-relatedness described as a graph |
 | `dsMTL_iNMF`  | MTL | Matrix factorization | Factorize matrices into shared and specific components |
 
+> [!NOTE]
+> In addition to the original architecture for federated MTL approaches as presented in the initial publication (Cao et al., 2022) and described above, which supports the analysis of sensitive individual-level data from geographically distributed data sources using the DataSHIELD platform, the concept of differential privacy has been included into the dsMTL package in 2025. This optional feature offers an additional security mechanism that is specific to the MTL models. In particular, differential privacy can provide a protection against so-called membership inference attacks to the models. Instructions and examples on how to set up the optional differential privacy feature are given in the documentation for [dsMTLClient](https://github.com/transbioZI/dsMTLClient).  
+
+
 
 
 
@@ -82,7 +86,8 @@ The entire tutorial can be found [here](https://isglobal-brge.github.io/resource
 2. For large-scale and compressed datasets, i.e. *.rda files in R,  it is recommended to attach the data sources using the R package [resources](https://opaldoc.obiba.org/en/latest/resources.html). The tutorial can be found [here](https://rpubs.com/jrgonzalezISGlobal/tutorial_resources)
 
 
-
+# References
+Cao, H., Zhang, Y., Baumbach, J., Burton, P. R., Dwyer, D., Koutsouleris, N., Matschinske, J., Marcon, Y., Rajan, S., Rieg, T., Ryser-Welch, P., Späth, J., The COMMITMENT Consortium, Herrmann, C., and Schwarz, E. (2022). dsMTL: a computational framework for privacy-preserving, distributed multi-task machine learning. Bioinformatics, 38(21), 4919-4926. DOI: 10.1093/bioinformatics/btac616
 
 # Contact
 Han Cao (hank9cao@gmail.com)

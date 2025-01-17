@@ -3,7 +3,7 @@ Type: Package
 Title: dsMTL server side base functions 
 Version: 0.9.9
 Date: 2021-07-01
-Author: Han Cao, Youcheng Zhang, Carl Herrmann and Emanuel Schwarz
+Author: Han Cao, Youcheng Zhang, Roman Schefzik, Carl Herrmann and Emanuel Schwarz
 Authors@R: 
     c(person(given = "Han",
              family = "Cao",
@@ -14,6 +14,10 @@ Authors@R:
              family = "Zhang",
              role="com",
              email="Youcheng.zhang@bioquant.uni-heidelberg.de"), 
+      person(given = "Roman",
+             family = "Schefzik",
+             role="ctb",
+             email="roman.schefzik@zi-mannheim.de"),
       person(given = "Carl",
              family = "Herrmann",
              role="ths",
@@ -24,8 +28,29 @@ Authors@R:
              email="emanuel.schwarz@zi-mannheim.de"))
 Maintainer: Han Cao <hank9cao@gmail.com>
 Description: dsMTL - Federated Multi-Task Learning based on DataSHIELD dsBase.
+AggregateMethods: 
+    LS_iter_updateDS,
+    LR_iter_updateDS,
+    LS_funcVal_evalDS,
+    LR_funcVal_evalDS,
+	LS_simulateDifferencesDS,
+	LR_simulateDifferencesDS,
+    updateHDS,
+    calcMSEDS,
+    calcMCRDS,
+    xtyDS,
+    xtycovDS,
+    getMyServerDataDS   
+AssignMethods: 
+    addInterceptDS,
+    initMatricesDS,
+    initRanMatsWithSeedsDS,
+    updateOtherMatsDS,
+    setMyServerDataDS,
+    subsetSubjestsDS
+Options: datashield.privacyLevel=5
 Depends: R (>= 3.5)
 Encoding: UTF-8
 LazyData: true
 License: GPL-3
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3

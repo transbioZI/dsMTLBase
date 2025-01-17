@@ -2,8 +2,10 @@
 
 export(LR_funcVal_evalDS)
 export(LR_iter_updateDS)
+export(LR_simulateDifferencesDS)
 export(LS_funcVal_evalDS)
 export(LS_iter_updateDS)
+export(LS_simulateDifferencesDS)
 export(addInterceptDS)
 export(calcMCRDS)
 export(calcMSEDS)

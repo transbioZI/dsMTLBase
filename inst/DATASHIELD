@@ -3,6 +3,8 @@ AggregateMethods:
     LR_iter_updateDS,
     LS_funcVal_evalDS,
     LR_funcVal_evalDS,
+	LS_simulateDifferencesDS,
+	LR_simulateDifferencesDS,
     updateHDS,
     calcMSEDS,
     calcMCRDS,
