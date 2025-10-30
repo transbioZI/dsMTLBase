@@ -92,7 +92,8 @@ Cao, H., Zhang, Y., Baumbach, J., Burton, P. R., Dwyer, D., Koutsouleris, N., Ma
 # Contact
 Han Cao (hank9cao@gmail.com)
 
-
+# Questions and discussions
+If you have any questions regarding the implementation or encounter any issues related to dsMTLBase, please use the [discussion platform on this repository](https://github.com/transbioZI/dsMTLBase/discussions). Alternatively, you may post your queries on the [external dsMTL discussion forum hosted on Google Groups](https://groups.google.com/g/dsmtl-discussion-forum). 
 
 # Useful links
 1. dsMTLClient - federated, privacy-preserving machine-learning and multi-task learning analysis: https://github.com/transbioZI/dsMTLClient
